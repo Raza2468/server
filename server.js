@@ -2,13 +2,7 @@ var express = require("express")
 var server = express()
 
 
-
-
-// server.get("/", (req, res, next) => {
-//     console.log("some one get menu");
-//     res.send("menu: what do you want? food or water");
-// })
-
+var PORT = process.env.PORT || 3001
 server.get("/", (req,res,next)=>{
 console.log("runinig===>biyani");
     res.send("Hellow i will come biryani $ Home $")
@@ -21,5 +15,5 @@ server.get("/about", (req,res,next)=>{
     
 
 server.listen(process.env.PORT || 3001,()=>{
-    console.log('server is running');
+    console.log('server is running' +PORT);
 })
