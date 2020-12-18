@@ -2,7 +2,7 @@ var express = require("express")
 var server = express()
 
 
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 3000
 
 server.get("/", (req,res,next)=>{
 console.log("runinig===>biyani");
@@ -16,5 +16,5 @@ server.get("/about", (req,res,next)=>{
     
 
 server.listen(PORT,()=>{
-    console.log('server is running' +PORT);
+    console.log('server is running'+PORT);
 })
