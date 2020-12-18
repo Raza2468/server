@@ -14,6 +14,6 @@ server.get("/about", (req,res,next)=>{
     })
     
 
-server.listen(process.env.PORT || 3001,()=>{
+server.listen(PORT || 3001,()=>{
     console.log('server is running' +PORT);
 })
